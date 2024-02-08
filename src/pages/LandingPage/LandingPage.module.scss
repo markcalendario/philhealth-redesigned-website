@@ -1,4 +1,6 @@
 @use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/abstracts/mixins-screens" as screens;
+@use "../../styles/layouts/responsive" as responsive;
 
 #carousel {
   aspect-ratio: 797/215;
@@ -6,6 +8,7 @@
   background-color: colors.$primary;
   transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
   position: relative;
+  border-bottom: 2px colors.$primary solid;
 
   .buttons {
     position: absolute;
@@ -28,6 +31,42 @@
       cursor: pointer;
       border-radius: 50px;
       border: 1px colors.$slate solid;
+    }
+  }
+}
+
+#discover {
+  padding: 60px 0;
+  background-color: colors.$slate;
+
+  .container {
+    @include responsive.container;
+
+    .wrapper {
+      h1 {
+        text-align: center;
+        color: colors.$primary;
+      }
+
+      .cards {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        & > a {
+          flex-grow: 1;
+          width: calc((100% - (15px)) / 1);
+
+          @include screens.tablet {
+            width: calc((100% - (15px * 1)) / 2);
+          }
+
+          @include screens.desktop {
+            width: calc((100% - (15px * 3)) / 4);
+          }
+        }
+      }
     }
   }
 }
