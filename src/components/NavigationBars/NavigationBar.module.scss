@@ -1,0 +1,92 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/layouts/responsive" as responsive;
+
+.navbar {
+  background-color: colors.$slate;
+  padding: 10px 0;
+
+  .container {
+    @include responsive.container;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 10px;
+
+        h1 {
+          font-size: large;
+        }
+
+        img {
+          aspect-ratio: 1;
+          width: 40px;
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: 20px;
+
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          padding: 5px;
+          transition: 0.1s ease;
+          &:hover {
+            color: colors.$slate;
+            background-color: colors.$primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+#sidePanel {
+  position: fixed;
+  background-color: colors.$primary;
+  right: 0;
+  top: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+  padding: 10px 25px;
+  overflow: auto;
+  animation: sidePanelOpenTransition 1s;
+
+  .sidePanelLinks {
+    margin-top: 10px;
+
+    a {
+      color: colors.$slate;
+      display: block;
+      padding: 10px 0;
+      text-decoration: none;
+      transition: 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      border-radius: 3px;
+
+      &:hover {
+        background-color: colors.$slate;
+        color: colors.$primary;
+        padding: 10px;
+      }
+    }
+  }
+
+  @keyframes sidePanelOpenTransition {
+    from {
+      transform: translate(350px);
+    }
+
+    to {
+      transform: translate(0);
+    }
+  }
+}
