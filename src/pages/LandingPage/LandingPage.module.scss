@@ -1,0 +1,33 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+
+#carousel {
+  aspect-ratio: 797/215;
+  background-size: cover;
+  background-color: colors.$primary;
+  transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+
+  .buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+
+    button {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba($color: colors.$primary, $alpha: 0.9);
+      color: colors.$slate;
+      cursor: pointer;
+      border-radius: 50px;
+      border: 1px colors.$slate solid;
+    }
+  }
+}

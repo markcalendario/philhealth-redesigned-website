@@ -60,6 +60,7 @@
   padding: 10px 25px;
   overflow: auto;
   animation: sidePanelOpenTransition 1s;
+  z-index: 1;
 
   .sidePanelLinks {
     margin-top: 10px;
