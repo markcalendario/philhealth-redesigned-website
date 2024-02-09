@@ -1,5 +1,6 @@
 @use "../../styles/abstracts/variables-colors" as colors;
 @use "../../styles/abstracts/mixins-screens" as screens;
+@use "../../styles/abstracts/mixins-shadows" as shadows;
 @use "../../styles/layouts/responsive" as responsive;
 
 #carousel {
@@ -64,6 +65,59 @@
 
           @include screens.desktop {
             width: calc((100% - (15px * 3)) / 4);
+          }
+        }
+      }
+    }
+  }
+}
+
+#ekonsulta {
+  padding: 60px 0;
+
+  .container {
+    @include responsive.container;
+
+    .wrapper {
+      @include screens.tabletAndDesktop {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+      }
+
+      .left {
+        flex: 1;
+        img {
+          width: 100%;
+          border-radius: 5px;
+          @include shadows.shadow-lg;
+        }
+      }
+
+      .right {
+        flex: 1.5;
+        @include screens.mobile {
+          margin-top: 10px;
+        }
+
+        & > *:not(:first-child) {
+          margin: 15px 0;
+        }
+
+        h1 {
+          color: colors.$primary;
+        }
+
+        p {
+          color: colors.$slate-7;
+        }
+
+        .check {
+          display: flex;
+          gap: 10px;
+
+          i {
+            color: colors.$primary;
           }
         }
       }

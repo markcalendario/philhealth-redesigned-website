@@ -9,6 +9,7 @@ export default function LandingPage() {
       <NavigationBar />
       <BannerCarousel />
       <DiscoverSection />
+      <EKonsulta />
     </Fragment>
   );
 }
@@ -105,6 +106,73 @@ function DiscoverSection() {
               title="Our Partners"
               description="We forge partnerships with only the best in the industry to fulfill our mandate of providing all Filipinos with accessible, available, acceptable and affordable health care services that will lead to better health outcomes and improved quality of life."
             />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function EKonsulta() {
+  return (
+    <div id={styles.ekonsulta}>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <div className={styles.left}>
+            <img
+              src="/assets/images/e-konsulta/consultation.jpg"
+              alt="consultation"
+            />
+          </div>
+          <div className={styles.right}>
+            <h1>PhilHealth E-Konsulta</h1>
+            <p>
+              PhilHealth Konsultasyong Sulit Tama (Konsulta) is a comprehensive
+              outpatient benefits as mandated by the Universal Health Care Law.
+            </p>
+            <p>
+              UHC ensures that all Filipinos are guaranteed equitable access to
+              quality and affordable health care goods and services, and
+              protected against financial risks.
+            </p>
+            <p>PhilHealth Konsulta aims to:</p>
+            <div className={styles.check}>
+              <i className="fas fa-check-circle" />{" "}
+              <p>
+                Protect the health of every Filipinos against chronic illnesses
+              </p>
+            </div>
+            <div className={styles.check}>
+              <i className="fas fa-check-circle" />{" "}
+              <p>Avoid complications through early detection</p>
+            </div>
+            <div className={styles.check}>
+              <i className="fas fa-check-circle" />{" "}
+              <p>To provide affordable drugs and medicines</p>
+            </div>
+            <p>
+              Under the PhilHealth Konsulta, all Filipinos shall be registered
+              with an accredited PhilHealth Konsulta Provider of their choice
+              and be eligible to avail of the following:
+            </p>
+            <div className={styles.check}>
+              <i className="fas fa-check-circle" /> <p>Consultation</p>
+            </div>
+            <div className={styles.check}>
+              <i className="fas fa-check-circle" /> <p>Consultation</p>
+            </div>
+            <div className={styles.check}>
+              <i className="fas fa-check-circle" />{" "}
+              <p>Health Risk Screening and Assessment</p>
+            </div>
+            <div className={styles.check}>
+              <i className="fas fa-check-circle" />{" "}
+              <p>Selected Laboratory and Diagnostic Test</p>
+            </div>
+            <div className={styles.check}>
+              <i className="fas fa-check-circle" />{" "}
+              <p>Selected Drugs and medicines</p>
+            </div>
           </div>
         </div>
       </div>
