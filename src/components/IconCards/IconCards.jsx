@@ -2,7 +2,7 @@ import styles from "./IconCards.module.scss";
 
 export default function IconCard({ icon, title, description }) {
   return (
-    <div className={styles.iconCard}>
+    <div className={styles.iconCard} data-aos="fade-up">
       <div className={styles.wrapper}>
         <i className={`${icon} fa-fw`} />
         <div className={styles.texts}>

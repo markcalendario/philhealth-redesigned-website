@@ -1,6 +1,7 @@
 import styles from "./LinkImageCards.module.scss";
 
 export default function LinkImageCard({
+  dataAos,
   href,
   image,
   alt,
@@ -8,7 +9,7 @@ export default function LinkImageCard({
   description
 }) {
   return (
-    <a href={href} className={styles.imageCard}>
+    <a data-aos={dataAos} href={href} className={styles.imageCard}>
       <img src={image} alt={alt} />
       <div className={styles.texts}>
         <p className={styles.title}>{title}</p>

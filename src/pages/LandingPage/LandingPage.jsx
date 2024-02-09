@@ -79,10 +79,11 @@ function DiscoverSection() {
     <div id={styles.discover}>
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          <h1>Discover More About PhilHealth</h1>
+          <h1 data-aos="fade-up">Discover More About PhilHealth</h1>
 
           <div className={styles.cards}>
             <LinkImageCard
+              dataAos="fade-right"
               href="/members"
               image="/assets/images/discover/members.png"
               alt="members"
@@ -90,6 +91,7 @@ function DiscoverSection() {
               description="This section features the different membership categories, premium payment, data amendment and other procedures that each type of member must know. We have custom-fit the information to ensure that we address the specific concerns of each of our member types."
             />
             <LinkImageCard
+              dataAos="fade-up"
               href="/benefits"
               image="/assets/images/discover/benefits.png"
               alt="benefits"
@@ -97,6 +99,7 @@ function DiscoverSection() {
               description="This section features a variety of comprehensive health care services -from basic primary care to catastrophic packages to provide members and their families with the information they need on benefits and benefits availment. It includes eligibility requirements, coverage, general guidelines for specific diseases and selections criteria among others."
             />
             <LinkImageCard
+              dataAos="fade-up"
               href="/services"
               image="/assets/images/discover/services.png"
               alt="online services"
@@ -104,6 +107,7 @@ function DiscoverSection() {
               description="Considered the newest addition to our menu of electronic services, this section features the different access points that our stakeholders can tap to transact with us online. It includes registration, premium payment and reporting and even locating our offices nationwide."
             />
             <LinkImageCard
+              dataAos="fade-left"
               href="/services"
               image="/assets/images/discover/partners.png"
               alt="partners"
@@ -124,6 +128,7 @@ function EKonsulta() {
         <div className={styles.wrapper}>
           <div className={styles.left}>
             <img
+              data-aos="fade-right"
               src="/assets/images/e-konsulta/consultation.jpg"
               alt="consultation"
             />
@@ -211,6 +216,7 @@ function UniversalHealthCare() {
           </div>
           <div className={styles.right}>
             <img
+              data-aos="fade-left"
               src="/assets/images/universal-health-care/universal-health-care.webp"
               alt="consultation"
             />
@@ -223,7 +229,7 @@ function UniversalHealthCare() {
 
 function ARTA() {
   return (
-    <div id={styles.arta}>
+    <div id={styles.arta} data-aos="flip-up">
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <h1>

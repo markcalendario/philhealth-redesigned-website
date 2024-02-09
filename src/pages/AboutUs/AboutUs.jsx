@@ -62,7 +62,11 @@ function History() {
             </p>
           </div>
           <div className={styles.right}>
-            <img src="/assets/images/about-us/history.jpg" alt="history" />
+            <img
+              data-aos="fade-left"
+              src="https://scontent.fmnl25-2.fna.fbcdn.net/v/t39.30808-6/341173688_619590316258101_6474290136452392470_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=7iUeqS6nGLsAX-C8zGi&_nc_ht=scontent.fmnl25-2.fna&oh=00_AfC_k2JEgi64FpQ67IGffJK4V6C1K-0tc_mM5s7GIeaSpw&oe=65CA65D6"
+              alt="history"
+            />
           </div>
         </div>
       </div>
@@ -76,7 +80,11 @@ function MandateAndFunction() {
       <div className={styles.container}>
         <div className={styles.wrapperReverse}>
           <div className={styles.left}>
-            <img src="/assets/images/about-us/mandate.jpg" alt="mandate" />
+            <img
+              data-aos="fade-right"
+              src="/assets/images/about-us/mandate.jpg"
+              alt="mandate"
+            />
           </div>
           <div className={styles.right}>
             <h1>Agency's Mandate and Function</h1>
@@ -143,7 +151,11 @@ function VisionMission() {
             </p>
           </div>
           <div className={styles.right}>
-            <img src="/assets/images/about-us/vision.webp" alt="vision" />
+            <img
+              data-aos="fade-left"
+              src="/assets/images/about-us/vision.webp"
+              alt="vision"
+            />
           </div>
         </div>
       </div>
@@ -158,6 +170,7 @@ function OrganizationalStructure() {
         <div className={styles.wrapperReverse}>
           <div className={styles.left}>
             <img
+              data-aos="fade-right"
               src="/assets/images/about-us/org-structure.jpg"
               alt="structure"
             />
@@ -249,7 +262,11 @@ function ISOCertification() {
             </p>
           </div>
           <div className={styles.right}>
-            <img src="/assets/images/logos/logo.png" alt="PhilHealth" />
+            <img
+              data-aos="fade-left"
+              src="/assets/images/logos/logo.png"
+              alt="PhilHealth"
+            />
           </div>
         </div>
       </div>

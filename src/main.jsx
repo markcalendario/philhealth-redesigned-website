@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -17,6 +19,13 @@ const router = createBrowserRouter([
     element: <AboutUs />
   }
 ]);
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out-sine"
+  });
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
