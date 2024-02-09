@@ -1,0 +1,44 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/layouts/responsive" as responsive;
+
+#footer {
+  background-color: colors.$slate-1;
+  padding: 20px 0;
+
+  .container {
+    @include responsive.container;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      text-align: center;
+      h1 {
+        color: colors.$primary;
+        font-weight: 900;
+      }
+
+      .govtLogos {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+
+        img {
+          aspect-ratio: 1;
+          width: 50px;
+        }
+      }
+
+      .links {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+
+        a {
+          font-size: x-large;
+        }
+      }
+    }
+  }
+}
