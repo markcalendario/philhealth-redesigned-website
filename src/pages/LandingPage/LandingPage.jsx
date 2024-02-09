@@ -10,6 +10,7 @@ export default function LandingPage() {
       <BannerCarousel />
       <DiscoverSection />
       <EKonsulta />
+      <UniversalHealthCare />
     </Fragment>
   );
 }
@@ -173,6 +174,43 @@ function EKonsulta() {
               <i className="fas fa-check-circle" />{" "}
               <p>Selected Drugs and medicines</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function UniversalHealthCare() {
+  return (
+    <div id={styles.universalHealthCare}>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <div className={styles.left}>
+            <h1>Universal Health Care</h1>
+            <p>
+              LIBRE NA BA ANG LAHAT NG SERBISYONG PANGKALUSUGAN - MA OSPITAL MAN
+              O OUTPATIENT?
+            </p>
+            <p>
+              Ang lahat ng pasyente ay wala nang co-payment/ co-insurance kung
+              sila ay ma-confine sa basic o ward accommodation ng ospital.
+            </p>
+            <p>
+              Ayon sa Batas, hindi bababa sa 90% ng mga kama sa government
+              hospitals; 70% sa specialty hospitals; at 10% sa mga pribadong
+              ospital ay dapat basic o ward accommodation.
+            </p>
+            <p>
+              Upang ito ay maisakatuparan ay kasalukuyan nang isinasagawa ang
+              mga konsultasyon para sa kaukulang guidelines nito.
+            </p>
+          </div>
+          <div className={styles.right}>
+            <img
+              src="/assets/images/universal-health-care/universal-health-care.webp"
+              alt="consultation"
+            />
           </div>
         </div>
       </div>
