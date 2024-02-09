@@ -1,0 +1,100 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/abstracts/mixins-screens" as screens;
+@use "../../styles/layouts/responsive" as responsive;
+
+#aboutUs {
+  & > div:nth-child(odd) {
+    background-color: colors.$slate-1;
+  }
+}
+
+#section {
+  padding: 60px 0;
+
+  .container {
+    @include responsive.container;
+
+    .wrapper,
+    .wrapperReverse {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+
+      @include screens.tabletAndDesktop {
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .left {
+        flex: 1;
+
+        & > *:not(:first-child) {
+          margin: 15px 0;
+        }
+
+        p {
+          line-height: 22px;
+        }
+
+        h1 {
+          color: colors.$primary;
+        }
+      }
+
+      .right {
+        flex: 0.7;
+
+        img {
+          width: 100%;
+          aspect-ratio: 1;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .wrapperReverse {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+
+      @include screens.tabletAndDesktop {
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .right {
+        flex: 1;
+
+        & > *:not(:first-child) {
+          margin: 15px 0;
+        }
+
+        p {
+          line-height: 22px;
+        }
+
+        ol {
+          list-style-position: inside;
+        }
+
+        h1 {
+          color: colors.$primary;
+        }
+      }
+
+      .left {
+        flex: 0.7;
+        img {
+          width: 100%;
+          aspect-ratio: 1;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
