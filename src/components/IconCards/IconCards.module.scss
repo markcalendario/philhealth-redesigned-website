@@ -1,0 +1,32 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/abstracts/mixins-shadows" as shadows;
+
+.iconCard {
+  background-color: colors.$primary;
+
+  padding: 20px 15px;
+  text-align: center;
+  border-radius: 10px;
+  @include shadows.shadow-xl;
+
+  .wrapper {
+    i {
+      font-size: 56px;
+      color: colors.$slate;
+    }
+
+    .texts {
+      margin-top: 15px;
+      color: colors.$slate;
+
+      & > * {
+        margin-top: 7px;
+      }
+
+      .title {
+        font-weight: bolder;
+        font-size: x-large;
+      }
+    }
+  }
+}

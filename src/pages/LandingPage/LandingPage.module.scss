@@ -205,3 +205,40 @@
     }
   }
 }
+
+#contact {
+  padding: 60px 0;
+  .container {
+    @include responsive.container;
+
+    .wrapper {
+      .header {
+        text-align: center;
+
+        h1 {
+          color: colors.$primary;
+        }
+
+        p {
+          margin: auto;
+          max-width: 600px;
+        }
+      }
+
+      .cards {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & > div {
+          flex: 1;
+        }
+
+        @include screens.tabletAndDesktop {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
+import IconCard from "../../components/IconCards/IconCards.jsx";
 import LinkImageCard from "../../components/LinkImageCards/LinkImageCards.jsx";
 import NavigationBar from "../../components/NavigationBars/NavigationBar.jsx";
 import styles from "./LandingPage.module.scss";
@@ -10,8 +11,9 @@ export default function LandingPage() {
       <BannerCarousel />
       <DiscoverSection />
       <EKonsulta />
-      <UniversalHealthCare />
       <ARTA />
+      <UniversalHealthCare />
+      <Contact />
     </Fragment>
   );
 }
@@ -231,6 +233,42 @@ function ARTA() {
           <a href="https://www.officialgazette.gov.ph/2007/06/02/republic-act-no-9485/">
             Learn more about Anti-Red Tape Act
           </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div id={styles.contact}>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <div className={styles.header}>
+            <h1>Reach Us</h1>
+            <p>
+              Callback schedule is from 8 am - 8 pm, 12 hours by 7 days,
+              including weekends and holidays. Ask agent for details to make
+              sure the callback is from PhilHealth.
+            </p>
+          </div>
+          <div className={styles.cards}>
+            <IconCard
+              icon="fas fa-compass"
+              title="Address"
+              description="Ten Commandments Building, 689 Rizal Avenue Extension, Gracepark, Caloocan City"
+            />
+            <IconCard
+              icon="fas fa-phone"
+              title="Hotline"
+              description="(02) 866-225-88. Available 24/7 including weekends and holidays."
+            />
+            <IconCard
+              icon="fas fa-mobile"
+              title="Address"
+              description="Call and text is available 24/7 to 0998-857-2957 (SMART) or 0917-127-5987 (Globe)"
+            />
+          </div>
         </div>
       </div>
     </div>
