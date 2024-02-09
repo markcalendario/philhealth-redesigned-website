@@ -180,3 +180,28 @@
     }
   }
 }
+
+#arta {
+  background-color: colors.$red;
+  padding: 50px 0;
+  background-image: url("/assets/images/arta/arta-background.svg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  .container {
+    width: 100%;
+    @include responsive.container;
+    .wrapper {
+      margin: auto;
+      max-width: 650px;
+      text-align: center;
+      color: colors.$slate;
+
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        color: colors.$slate;
+      }
+    }
+  }
+}

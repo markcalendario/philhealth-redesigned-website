@@ -11,6 +11,7 @@ export default function LandingPage() {
       <DiscoverSection />
       <EKonsulta />
       <UniversalHealthCare />
+      <ARTA />
     </Fragment>
   );
 }
@@ -212,6 +213,24 @@ function UniversalHealthCare() {
               alt="consultation"
             />
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ARTA() {
+  return (
+    <div id={styles.arta}>
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <h1>
+            PhilHealth Steps Up for the Ease of Doing Business and Efficient
+            Government Service Delivery
+          </h1>
+          <a href="https://www.officialgazette.gov.ph/2007/06/02/republic-act-no-9485/">
+            Learn more about Anti-Red Tape Act
+          </a>
         </div>
       </div>
     </div>
