@@ -1,16 +1,28 @@
+import { Fragment } from "react";
 import NavigationBar from "../../components/NavigationBars/NavigationBar.jsx";
 import styles from "./AboutUs.module.scss";
 
 export default function AboutUs() {
   return (
-    <section id={styles.aboutUs}>
+    <Fragment>
       <NavigationBar />
+      <Banner />
       <History />
       <MandateAndFunction />
       <VisionMission />
       <OrganizationalStructure />
       <ISOCertification />
-    </section>
+    </Fragment>
+  );
+}
+
+function Banner() {
+  return (
+    <div id={styles.banner}>
+      <div className={styles.wrapper}>
+        <h1>The Philippine Health Insurance Corporation</h1>
+      </div>
+    </div>
   );
 }
 
@@ -64,7 +76,7 @@ function History() {
           <div className={styles.right}>
             <img
               data-aos="fade-left"
-              src="https://scontent.fmnl25-2.fna.fbcdn.net/v/t39.30808-6/341173688_619590316258101_6474290136452392470_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9c7eae&_nc_ohc=7iUeqS6nGLsAX-C8zGi&_nc_ht=scontent.fmnl25-2.fna&oh=00_AfC_k2JEgi64FpQ67IGffJK4V6C1K-0tc_mM5s7GIeaSpw&oe=65CA65D6"
+              src="/assets/images/about-us/history.jpg"
               alt="history"
             />
           </div>
@@ -76,17 +88,10 @@ function History() {
 
 function MandateAndFunction() {
   return (
-    <div id={styles.section}>
+    <div id={styles.section} className={styles.reverse}>
       <div className={styles.container}>
-        <div className={styles.wrapperReverse}>
+        <div className={styles.wrapper + " " + styles.reverse}>
           <div className={styles.left}>
-            <img
-              data-aos="fade-right"
-              src="/assets/images/about-us/mandate.jpg"
-              alt="mandate"
-            />
-          </div>
-          <div className={styles.right}>
             <h1>Agency's Mandate and Function</h1>
             <p>
               The National Health Insurance Program was established to provide
@@ -110,6 +115,13 @@ function MandateAndFunction() {
               care, and from owning or investing in health care facilities.
               (Article III, Section 5 of RA 7875 as amended)
             </p>
+          </div>
+          <div className={styles.right}>
+            <img
+              data-aos="fade-right"
+              src="/assets/images/about-us/mandate.jpg"
+              alt="mandate"
+            />
           </div>
         </div>
       </div>
@@ -165,17 +177,10 @@ function VisionMission() {
 
 function OrganizationalStructure() {
   return (
-    <div id={styles.section}>
+    <div id={styles.section} className={styles.reverse}>
       <div className={styles.container}>
-        <div className={styles.wrapperReverse}>
+        <div className={styles.wrapper}>
           <div className={styles.left}>
-            <img
-              data-aos="fade-right"
-              src="/assets/images/about-us/org-structure.jpg"
-              alt="structure"
-            />
-          </div>
-          <div className={styles.right}>
             <h1>Organization Structure</h1>
             <p>
               Discover our organizational structure! Click the link below to
@@ -235,6 +240,13 @@ function OrganizationalStructure() {
                 </li>
               </ol>
             </p>
+          </div>
+          <div className={styles.right}>
+            <img
+              data-aos="fade-right"
+              src="/assets/images/about-us/org-structure.jpg"
+              alt="structure"
+            />
           </div>
         </div>
       </div>

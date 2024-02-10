@@ -2,9 +2,23 @@
 @use "../../styles/abstracts/mixins-screens" as screens;
 @use "../../styles/layouts/responsive" as responsive;
 
-#aboutUs {
-  & > div:nth-child(odd) {
-    background-color: colors.$slate-1;
+#banner {
+  background-image: url("/assets/images/about-us/banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 0;
+
+  .wrapper {
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+
+    h1 {
+      font-weight: 900;
+      color: colors.$slate;
+      font-size: 54px;
+    }
   }
 }
 
@@ -14,8 +28,7 @@
   .container {
     @include responsive.container;
 
-    .wrapper,
-    .wrapperReverse {
+    .wrapper {
       text-align: justify;
       text-justify: inter-word;
     }
@@ -56,44 +69,15 @@
         }
       }
     }
+  }
 
-    .wrapperReverse {
-      display: flex;
-      flex-direction: column;
-      gap: 100px;
+  &.reverse {
+    background-color: colors.$slate-1;
 
+    .wrapper {
       @include screens.tabletAndDesktop {
         align-items: center;
-        flex-direction: row;
-      }
-
-      .right {
-        flex: 1;
-
-        & > *:not(:first-child) {
-          margin: 15px 0;
-        }
-
-        p {
-          line-height: 22px;
-        }
-
-        ol {
-          list-style-position: inside;
-        }
-
-        h1 {
-          color: colors.$primary;
-        }
-      }
-
-      .left {
-        flex: 0.7;
-        img {
-          width: 100%;
-          aspect-ratio: 1;
-          object-fit: cover;
-        }
+        flex-direction: row-reverse;
       }
     }
   }
