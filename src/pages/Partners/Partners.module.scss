@@ -1,0 +1,19 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/layouts/responsive" as responsive;
+
+#banner {
+  background: url("/assets/images/partners/banner.png") no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+
+  .container {
+    @include responsive.container;
+    text-align: center;
+    color: colors.$slate;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+}

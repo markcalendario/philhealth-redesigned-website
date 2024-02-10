@@ -31,11 +31,14 @@
         }
 
         p {
-          line-height: 22px;
+          line-height: 25px;
         }
 
         h1 {
-          color: colors.$primary;
+          background-color: colors.$primary;
+          color: colors.$slate;
+          padding: 10px 15px;
+          border-radius: 3px;
         }
 
         ol {
