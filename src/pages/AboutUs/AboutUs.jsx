@@ -151,51 +151,48 @@ function OrganizationalStructure() {
         </a>
       </p>
       <p>
-        <p>
-          At the onset, the PhilHealth Board issued the PhilHealth Board
-          Resolution (PBR) No. 527, s. 2003, setting the general policy on the
-          adoption and implementation of the reorganization structure of
-          PhilHealth. The Reengineered PhilHealth Organization was approved by
-          the PhilHealth Board effective January 1, 2006 through PBR No. 842, s.
-          2005. Thereafter, there were changes to this organizational structure
-          that were approved by the PhilHealth Board prior the creation of GCG,
-          these includes the creation of the following organizational units:
-        </p>
-        <ol>
-          <li>
-            Organization and Systems Development Office (PBR No. 1318, s. 2009);
-          </li>
-          <li>
-            Office of the Chairman of the PhilHealth Board (PBR No. 1431, s.
-            2010);
-          </li>
-          <li>
-            Task Force on Corporate Center and Offices (TFCCO) (OO No. 0068, s.
-            2011);
-          </li>
-          <li>
-            PhilHealth Identity Management System (PMO-PIMS) (OO No. 0094, s.
-            2012);
-          </li>
-          <li>
-            Changes in the Corporate Affairs Group’s Structure, Function,
-            Staffing and Other Support (Special Order No. 1251, s. 2012);
-          </li>
-          <li>
-            Information Management Sector (IMS) and the establishment of the
-            Office of the Senior Vice President – Chief Information Officer
-            (OSVP-CIO) (PBR No. 1614, s. 2012);
-          </li>
-          <li>
-            Corporate Information Security Department (PBR No. 1615, s. 2012);
-            and
-          </li>
-          <li>
-            Overseas Filipino Program, Formal Sector and Non-Formal Sector under
-            the Member Management Group (PBR No. 1823, s. 2013).
-          </li>
-        </ol>
+        At the onset, the PhilHealth Board issued the PhilHealth Board
+        Resolution (PBR) No. 527, s. 2003, setting the general policy on the
+        adoption and implementation of the reorganization structure of
+        PhilHealth. The Reengineered PhilHealth Organization was approved by the
+        PhilHealth Board effective January 1, 2006 through PBR No. 842, s. 2005.
+        Thereafter, there were changes to this organizational structure that
+        were approved by the PhilHealth Board prior the creation of GCG, these
+        includes the creation of the following organizational units:
       </p>
+      <ol>
+        <li>
+          Organization and Systems Development Office (PBR No. 1318, s. 2009);
+        </li>
+        <li>
+          Office of the Chairman of the PhilHealth Board (PBR No. 1431, s.
+          2010);
+        </li>
+        <li>
+          Task Force on Corporate Center and Offices (TFCCO) (OO No. 0068, s.
+          2011);
+        </li>
+        <li>
+          PhilHealth Identity Management System (PMO-PIMS) (OO No. 0094, s.
+          2012);
+        </li>
+        <li>
+          Changes in the Corporate Affairs Group’s Structure, Function, Staffing
+          and Other Support (Special Order No. 1251, s. 2012);
+        </li>
+        <li>
+          Information Management Sector (IMS) and the establishment of the
+          Office of the Senior Vice President – Chief Information Officer
+          (OSVP-CIO) (PBR No. 1614, s. 2012);
+        </li>
+        <li>
+          Corporate Information Security Department (PBR No. 1615, s. 2012); and
+        </li>
+        <li>
+          Overseas Filipino Program, Formal Sector and Non-Formal Sector under
+          the Member Management Group (PBR No. 1823, s. 2013).
+        </li>
+      </ol>
     </TwoColumnImageText>
   );
 }
