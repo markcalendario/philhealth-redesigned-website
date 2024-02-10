@@ -3,16 +3,30 @@
 
 .iconCard {
   background-color: colors.$primary;
-
+  border-bottom: 5px colors.$primary-variant solid;
   padding: 20px 15px;
   text-align: center;
-  border-radius: 10px;
-  @include shadows.shadow-xl;
+  @include shadows.shadow;
 
   .wrapper {
-    i {
-      font-size: 56px;
-      color: colors.$slate;
+    .iconWrapper {
+      margin: auto;
+      margin-top: -50px;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      padding: 40px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: colors.$slate;
+      border: 1px colors.$primary solid;
+
+      i {
+        font-size: 40px;
+        color: colors.$primary;
+      }
     }
 
     .texts {
@@ -20,7 +34,7 @@
       color: colors.$slate;
 
       & > * {
-        margin-top: 7px;
+        margin-top: 15px;
       }
 
       .title {
