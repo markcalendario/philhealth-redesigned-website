@@ -1,0 +1,35 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/layouts/responsive" as responsive;
+
+#members {
+  background-image: url("/assets/images/members/banner.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    color: colors.$slate;
+    font-size: 25px;
+  }
+}
+
+#tagline {
+  padding: 60px 0;
+  background-color: colors.$primary;
+
+  .container {
+    @include responsive.container;
+
+    .wrapper {
+      text-align: center;
+      margin: auto;
+      max-width: 600px;
+      color: colors.$slate;
+    }
+  }
+}

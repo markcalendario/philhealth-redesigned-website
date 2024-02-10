@@ -1,0 +1,69 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/abstracts/mixins-screens" as screens;
+@use "../../styles/layouts/responsive" as responsive;
+
+#section {
+  padding: 60px 0;
+
+  .container {
+    @include responsive.container;
+
+    .wrapper {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+
+      @include screens.tabletAndDesktop {
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .left {
+        flex: 1;
+
+        & > *:not(:first-child) {
+          margin: 15px 0;
+        }
+
+        p {
+          line-height: 22px;
+        }
+
+        h1 {
+          color: colors.$primary;
+        }
+
+        ol {
+          list-style-position: inside;
+          line-height: 26px;
+        }
+      }
+
+      .right {
+        flex: 0.7;
+
+        img {
+          width: 100%;
+          aspect-ratio: 1;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  &.reverse {
+    background-color: colors.$slate-1;
+
+    .wrapper {
+      @include screens.tabletAndDesktop {
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
