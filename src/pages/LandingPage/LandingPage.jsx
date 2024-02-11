@@ -260,18 +260,18 @@ function Contact() {
           </div>
           <div className={styles.cards}>
             <IconCard
-              icon="fas fa-map-marker"
-              title="Address"
-              description="Citystate Centre, 709 Shaw Boulevard 1603 Pasig City"
-            />
-            <IconCard
               icon="fas fa-phone"
               title="Hotline"
               description="(02) 866-225-88. Available 24/7 including weekends and holidays."
             />
             <IconCard
-              icon="fas fa-mobile"
+              icon="fas fa-map-marker"
               title="Address"
+              description="Citystate Centre, 709 Shaw Boulevard 1603 Pasig City"
+            />
+            <IconCard
+              icon="fas fa-mobile"
+              title="Contacts"
               description="Call and text is available 24/7 to 0998-857-2957 (SMART) or 0917-127-5987 (Globe)"
             />
           </div>
