@@ -1,28 +1,21 @@
 import { Fragment } from "react";
+import Banner from "../../components/Banner/Banner.jsx";
 import NavigationBar from "../../components/NavigationBars/NavigationBar.jsx";
 import TwoColumnImageText from "../../components/TwoColumnImageText/TwoColumnImageText.jsx";
-import styles from "./Partners.module.scss";
 
 export default function Partners() {
   return (
     <Fragment>
       <NavigationBar />
-      <Banner />
+      <Banner
+        img="/assets/images/partners/banner.png"
+        title="Introducing our trusted partners!"
+      />
       <HealthcareProviders />
       <Employers />
       <CollectingPartners />
       <ServiceProviders />
     </Fragment>
-  );
-}
-
-function Banner() {
-  return (
-    <div id={styles.banner}>
-      <div className={styles.container}>
-        <h1>Introducing our trusted partners!</h1>
-      </div>
-    </div>
   );
 }
 

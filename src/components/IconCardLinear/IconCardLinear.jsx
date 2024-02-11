@@ -2,7 +2,7 @@ import styles from "./IconCardLinear.module.scss";
 
 export default function IconCardLinear({ title, description }) {
   return (
-    <div className={styles.iconCardLinear}>
+    <div data-aos="fade-up" className={styles.iconCardLinear}>
       <div className={styles.wrapper}>
         <i className="fas fa-check-circle" />
         <div className={styles.content}>

@@ -2,27 +2,6 @@
 @use "../../styles/abstracts/variables-colors" as colors;
 @use "../../styles/abstracts/mixins-screens" as screens;
 
-#banner {
-  background-image: url("/assets/images/benefits/banner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-
-  .wrapper {
-    margin: auto;
-    max-width: 700px;
-    text-align: center;
-
-    h1 {
-      font-weight: 900;
-      color: colors.$slate;
-      font-size: 32px;
-    }
-  }
-}
-
 .section {
   padding: 60px 0;
 

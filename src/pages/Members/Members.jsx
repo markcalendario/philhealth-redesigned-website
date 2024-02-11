@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Banner from "../../components/Banner/Banner.jsx";
 import NavigationBar from "../../components/NavigationBars/NavigationBar.jsx";
 import TwoColumnImageText from "../../components/TwoColumnImageText/TwoColumnImageText.jsx";
 import styles from "./Members.module.scss";
@@ -7,21 +8,14 @@ export default function Members() {
   return (
     <Fragment>
       <NavigationBar />
-      <Banner />
+      <Banner
+        img="/assets/images/members/banner.webp"
+        title="Meet our beloved members!"
+      />
       <DirectContributors />
       <IndirectContributors />
       <Tagline />
     </Fragment>
-  );
-}
-
-function Banner() {
-  return (
-    <div id={styles.members}>
-      <div className={styles.wrapper}>
-        <h1>Meet our beloved members!</h1>
-      </div>
-    </div>
   );
 }
 

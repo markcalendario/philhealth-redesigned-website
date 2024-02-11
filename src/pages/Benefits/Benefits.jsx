@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Banner from "../../components/Banner/Banner.jsx";
 import IconCardLinear from "../../components/IconCardLinear/IconCardLinear.jsx";
 import NavigationBar from "../../components/NavigationBars/NavigationBar.jsx";
 import styles from "./Benefits.module.scss";
@@ -7,7 +8,10 @@ export default function Benefits() {
   return (
     <Fragment>
       <NavigationBar />
-      <Banner />
+      <Banner
+        img="/assets/images/benefits/banner.webp"
+        title="Benefits and Assistance for PhilHealth Members"
+      />
       <InPatientBenefits />
       <OutPatientBenefits />
       <ZBenefits />
@@ -15,16 +19,6 @@ export default function Benefits() {
       <OverseasWorkerProgram />
       <HealthInsuranceForInsurance />
     </Fragment>
-  );
-}
-
-function Banner() {
-  return (
-    <div id={styles.banner}>
-      <div className={styles.wrapper}>
-        <h1>Benefits and Assistance for PhilHealth Members</h1>
-      </div>
-    </div>
   );
 }
 

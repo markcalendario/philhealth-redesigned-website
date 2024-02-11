@@ -1,29 +1,22 @@
 import { Fragment } from "react";
+import Banner from "../../components/Banner/Banner.jsx";
 import NavigationBar from "../../components/NavigationBars/NavigationBar.jsx";
 import TwoColumnImageText from "../../components/TwoColumnImageText/TwoColumnImageText.jsx";
-import styles from "./AboutUs.module.scss";
 
 export default function AboutUs() {
   return (
     <Fragment>
       <NavigationBar />
-      <Banner />
+      <Banner
+        img="/assets/images/about-us/banner.webp"
+        title="The Philippine Health Insurance Corporation"
+      />
       <History />
       <MandateAndFunction />
       <VisionMission />
       <OrganizationalStructure />
       <ISOCertification />
     </Fragment>
-  );
-}
-
-function Banner() {
-  return (
-    <div id={styles.banner}>
-      <div className={styles.wrapper}>
-        <h1>The Philippine Health Insurance Corporation</h1>
-      </div>
-    </div>
   );
 }
 
