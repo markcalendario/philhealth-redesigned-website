@@ -22,16 +22,15 @@
     width: 100%;
 
     button {
-      width: 35px;
-      height: 35px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba($color: colors.$primary, $alpha: 0.9);
-      color: colors.$slate;
+      background-color: unset;
+      border: unset;
       cursor: pointer;
-      border-radius: 50px;
-      border: 1px colors.$slate solid;
+
+      i {
+        font-size: 55px;
+        color: colors.$primary;
+        text-shadow: 0 0 3px colors;
+      }
     }
   }
 }
