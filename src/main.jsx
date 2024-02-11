@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Footer from "./components/Footers/Footers.jsx";
 import AboutUs from "./pages/AboutUs/AboutUs.jsx";
+import Benefits from "./pages/Benefits/Benefits.jsx";
 import LandingPage from "./pages/LandingPage/LandingPage.jsx";
 import Members from "./pages/Members/Members.jsx";
 import Partners from "./pages/Partners/Partners.jsx";
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/partners",
     element: <Partners />
+  },
+  {
+    path: "/benefits",
+    element: <Benefits />
   }
 ]);
 

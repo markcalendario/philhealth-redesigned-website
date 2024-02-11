@@ -1,0 +1,28 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+
+.iconCardLinear {
+  background-color: colors.$slate-1;
+  .wrapper {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+
+    i {
+      font-size: 32px;
+      color: colors.$primary;
+    }
+
+    .content {
+      .title {
+        font-weight: 900;
+        color: colors.$primary;
+        font-size: large;
+      }
+
+      .description {
+        margin-top: 5px;
+        color: colors.$slate-8;
+      }
+    }
+  }
+}

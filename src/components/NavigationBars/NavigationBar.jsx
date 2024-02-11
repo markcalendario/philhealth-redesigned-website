@@ -6,7 +6,7 @@ const links = [
   { link: "/about", name: "About Us" },
   { link: "/members", name: "Members" },
   { link: "/partners", name: "Partners" },
-  { link: "/services", name: "Online Services" },
+  { link: "/benefits", name: "Benefits" },
   { link: "/downloads", name: "Downloads" }
 ];
 
