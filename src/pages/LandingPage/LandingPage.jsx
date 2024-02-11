@@ -260,9 +260,9 @@ function Contact() {
           </div>
           <div className={styles.cards}>
             <IconCard
-              icon="fas fa-compass"
+              icon="fas fa-map-marker"
               title="Address"
-              description="Ten Commandments Building, 689 Rizal Avenue Extension, Gracepark, Caloocan City"
+              description="Citystate Centre, 709 Shaw Boulevard 1603 Pasig City"
             />
             <IconCard
               icon="fas fa-phone"

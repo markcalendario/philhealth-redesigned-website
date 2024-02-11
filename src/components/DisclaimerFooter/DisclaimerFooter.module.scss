@@ -1,0 +1,32 @@
+@use "../../styles/abstracts/variables-colors" as colors;
+@use "../../styles/abstracts/mixins-screens" as screens;
+@use "../../styles/layouts/responsive" as responsive;
+
+.disclaimer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: colors.$primary;
+  color: colors.$slate;
+
+  .container {
+    @include responsive.container;
+
+    .developers {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      p {
+        flex: 1;
+        flex-basis: calc((100% - (10px * 2)) / 3);
+        padding: 3px;
+        background-color: colors.$primary-variant;
+
+        @include screens.tabletAndDesktop {
+          flex-basis: calc((100% - (10px * 5)) / 6);
+        }
+      }
+    }
+  }
+}

@@ -17,7 +17,10 @@ export default function NavigationBar() {
         <div className={styles.wrapper}>
           <a className={styles.logo} href="/">
             <img src="/assets/images/logos/logo.png" alt="PhilHealth" />
-            <h1>PhilHealth</h1>
+            <div className={styles.textWrapper}>
+              <h1>PhilHealth</h1>
+              <p>Your Partner In Health</p>
+            </div>
           </a>
           <NavLinks />
         </div>

@@ -10,7 +10,7 @@ export default function Downloads() {
       <NavigationBar />
       <Banner
         img="/assets/images/downloads/banner.svg"
-        title="Form and Files Available for Download"
+        title="Forms and Files Available for Download"
       />
       <DownloadList />
     </Fragment>

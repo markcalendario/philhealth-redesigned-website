@@ -20,8 +20,15 @@
         text-decoration: none;
         gap: 10px;
 
-        h1 {
-          font-size: large;
+        .textWrapper {
+          h1 {
+            font-size: large;
+            font-weight: 900;
+          }
+
+          p {
+            font-size: xx-small;
+          }
         }
 
         img {
@@ -55,7 +62,7 @@
   right: 0;
   top: 0;
   width: 100%;
-  max-width: 300px;
+  // max-width: 300px;
   height: 100vh;
   padding: 10px 25px;
   overflow: auto;
@@ -83,7 +90,7 @@
 
   @keyframes sidePanelOpenTransition {
     from {
-      transform: translate(350px);
+      transform: translate(500px);
     }
 
     to {

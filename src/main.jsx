@@ -3,6 +3,7 @@ import "aos/dist/aos.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import DisclaimerFooter from "./components/DisclaimerFooter/DisclaimerFooter.jsx";
 import Footer from "./components/Footers/Footers.jsx";
 import AboutUs from "./pages/AboutUs/AboutUs.jsx";
 import Benefits from "./pages/Benefits/Benefits.jsx";
@@ -51,5 +52,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
     <Footer />
+    <DisclaimerFooter />
   </React.StrictMode>
 );

@@ -48,15 +48,15 @@ function InPatientBenefits() {
               description="Covers fees associated with surgical procedures performed in the operating room."
             />
             <IconCardLinear
-              title="Doctor's professional fees"
+              title="Doctor's Professional Fees"
               description="Covers fees charged by physicians for medical services rendered during hospitalization."
             />
             <IconCardLinear
-              title="Laboratory tests and examinations"
+              title="Laboratory Tests and Examinations"
               description="Covers the cost of diagnostic tests and examinations conducted to assess a patient's health condition."
             />
             <IconCardLinear
-              title="Use of equipment and facilities"
+              title="Use of Equipment and Facilities"
               description="Covers charges for the use of medical equipment and facilities, such as MRI machines or intensive care units."
             />
           </div>
