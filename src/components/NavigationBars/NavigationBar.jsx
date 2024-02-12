@@ -1,8 +1,10 @@
 import { Fragment, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import IconButton from "../IconButtons/IconButtons.jsx";
 import styles from "./NavigationBar.module.scss";
 
 const links = [
+  { link: "/", name: "Home" },
   { link: "/about", name: "About Us" },
   { link: "/members", name: "Members" },
   { link: "/partners", name: "Partners" },
@@ -31,6 +33,7 @@ export default function NavigationBar() {
 
 function NavLinks() {
   const [screenWidth, setScreenWidth] = useState(0);
+  const { pathname: route } = useLocation();
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
@@ -45,14 +48,17 @@ function NavLinks() {
     };
   }, []);
 
-  if (screenWidth < 768) {
+  if (screenWidth < 960) {
     return <Bars />;
   }
 
   return (
     <div className={styles.links}>
       {links.map((link) => (
-        <a key={link.name} href={link.link}>
+        <a
+          key={link.name}
+          className={route === link.link ? styles.active : ""}
+          href={link.link}>
           {link.name}
         </a>
       ))}
@@ -80,6 +86,8 @@ function Bars() {
 }
 
 function SidePanel({ toggleSidePanel }) {
+  const { pathname: route } = useLocation();
+
   return (
     <div id={styles.sidePanel}>
       <div className={styles.header}>
@@ -91,7 +99,10 @@ function SidePanel({ toggleSidePanel }) {
       </div>
       <div className={styles.sidePanelLinks}>
         {links.map((link) => (
-          <a key={link.name} href={link.link}>
+          <a
+            key={link.name}
+            href={link.link}
+            className={route === link.link ? styles.active : ""}>
             {link.name}
           </a>
         ))}
